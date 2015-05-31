@@ -6,7 +6,7 @@ class ControllerCommonColumnLeft extends Controller {
 		if (isset($this->request->get['route'])) {
 			$route = (string)$this->request->get['route'];
 		} else {
-			$route = 'common/intro';
+			$route = 'common/honme';
 		}
 
 		$layout_id = 0;

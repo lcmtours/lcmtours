@@ -9,7 +9,8 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: #fff;
+    background-color: #F5F5F5;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 html {
@@ -30,6 +31,7 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+	color:#555;
 }
 
 p {
@@ -84,6 +86,15 @@ a:focus {
     font-size: 16px;
     color: #fff;
 }
+.navbar-toggle {
+    color: #fff;
+}
+
+.navbar-brand img{
+	width:50px;
+	height:50px;
+    transition: all .6s ease-in-out;
+}
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
@@ -135,6 +146,12 @@ a:focus {
 	
 	.intro .intro-body .brand-heading {
 		margin-top:30px;
+		color:#FFF;
+	}
+	
+	.navbar-brand img{
+		width:85px;
+		height:85px;
 	}
 }
 
@@ -154,6 +171,13 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.intro h1,
+.intro h2,
+.intro h3,
+.intro h4{
+	color:#FFF;
 }
 
 .intro .intro-body {
@@ -272,8 +296,9 @@ a:focus {
         font-size: 12px;
 }
 
-#about{
-	
+#about-product{
+	padding-top:100px;
+	padding-right:20px;
 }
 
 #slideshow {
@@ -320,7 +345,15 @@ a:focus {
 	height:100%;
 }
 
+.hide-on-small{
+	display:none;
+}
 @media(min-width:767px) {
+	#about-product {
+		padding-top:100px;
+		padding-right:200px;
+	}
+	
     .content-section {
         padding-top: 100px;
     }
@@ -333,7 +366,13 @@ a:focus {
         height: 600px;
         padding-top: 50px;
     }
+
+	.hide-on-small{
+		display:inline;
+	}
+	
 }
+
 
 .btn {
     text-transform: uppercase;
@@ -430,6 +469,12 @@ body {
 }
 
 
+.sidemenu h1,
+.sidemenu h2,
+.sidemenu h3,
+.sidemenu h4{
+	color:#fff;
+}
 
 .sidemenu{
 	text-align:right;
@@ -451,7 +496,7 @@ body {
 
 .sidemenu-hidden {
 
-	top:35px;
+	top:39px;
 	background-color: rgba(50, 0, 0, 0);
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
@@ -508,3 +553,20 @@ body {
 	background-color:rgba(255,255,255,.7);
 
 }
+
+
+@media (max-width: 992px ) { 
+	.feature-container{
+		max-width: 630px;
+		margin:auto;
+	}
+}
+
+@media (min-width: 992px ) { 
+	.feature-container{
+		max-width:960px;
+		margin:auto;
+	}
+}
+
+

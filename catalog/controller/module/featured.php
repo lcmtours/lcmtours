@@ -4,6 +4,7 @@ class ControllerModuleFeatured extends Controller {
 		$this->load->language('module/featured');
 
 		$data['heading_title'] = $this->language->get('heading_title');
+		$data['heading_subtitle'] = $this->language->get('heading_subtitle');
 
 		$data['text_tax'] = $this->language->get('text_tax');
 
@@ -22,13 +23,24 @@ class ControllerModuleFeatured extends Controller {
 		}
 
 		$products = array_slice($setting['product'], 0, (int)$setting['limit']);
-
-		foreach ($products as $product_id) {
+		
+		$sizes = array( 	
+					array(2,1),
+					array(1,1),
+					array(1,1),
+					array(2,1)
+				);
+		
+		for($i=0; $i<count($products); $i++) {
+			$product_id = $products[$i];
 			$product_info = $this->model_catalog_product->getProduct($product_id);
 
 			if ($product_info) {
 				if ($product_info['image']) {
-					$image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+					$width_multiplier = $i<count($sizes) ? $sizes[$i][0]:1;
+					$width = $setting['width']*$width_multiplier + 30*($width_multiplier-1);
+					$height_multiplier = $i<count($sizes)?$sizes[$i][1]:1;
+					$image = $this->model_tool_image->resize($product_info['image'], $width, $setting['height']*$height_multiplier);
 				} else {
 					$image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
 				}
@@ -56,7 +68,8 @@ class ControllerModuleFeatured extends Controller {
 				} else {
 					$rating = false;
 				}
-
+				
+				
 				$data['products'][] = array(
 					'product_id'  => $product_info['product_id'],
 					'thumb'       => $image,

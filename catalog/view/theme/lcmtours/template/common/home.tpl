@@ -11,7 +11,7 @@ imagePage=true;
 				<div class="col-md-8 col-md-offset-2">
 					<h1 class="brand-heading">LCM Tours</h1>
 					<p class="intro-text">Connecting Tourist and Tour Guides in Cameroon.</p>
-					<a href="#about" class="btn btn-primary page-scroll">How It Works</a><br /><br />
+					<a href="#about" class="btn btn-primary page-scroll">Explore</a><br /><br />
 					
 				</div>
 			</div>
@@ -34,9 +34,7 @@ imagePage=true;
 
 			<section id="about" class="container content-section" >
 			<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
 			<?php echo $content_top; ?>
-			</div>
 			</div>
 			</section>
 

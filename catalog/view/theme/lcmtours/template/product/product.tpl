@@ -33,7 +33,7 @@
 								Price / Person : <h4 id="estimated-price" style="margin-bottom:5px;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></h4>
 							</div>
 							<div class="col-md-6">
-								<div style="margin-top:top" ><a href="#about" class="btn btn-danger page-scroll" style="margins:auto;width:150px">Learn more <i class="fa fa-chevron-down"></i> </a> </div>
+								<div style="margin-top:top" ><a href="#about-product" class="btn btn-danger page-scroll hide-on-small" style="margins:auto;width:150px">Learn more <i class="fa fa-chevron-down"></i> </a> </div>
 							</div>
 						</div>
 						
@@ -46,7 +46,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section" style="padding-top:100px;padding-right:200px;" >
+    <section id="about-product" class="container content-section" style="" >
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 			
@@ -54,7 +54,7 @@
 			
 			<?php echo $description; ?>
 
-			<a href="#slideshow" class="btn btn-danger page-scroll" style="margins:auto;width:150px">See more <i class="fa fa-chevron-down"></i> </a> </div>
+			<a href="#slideshow" class="btn btn-danger page-scroll hide-on-small" style="margins:auto;width:150px">See more <i class="fa fa-chevron-down"></i> </a> </div>
 
             </div>
         </div>
@@ -166,7 +166,7 @@
 		<div class="container" style="margin-top:-100px;">
 			<div class="row" >
 				<div class="col-md-2 col-md-offset-2" style="text-align:center;">
-					<a href="#details" class="btn btn-danger page-scroll" style="margins:auto;width:150px"><?php echo $tab_attribute; ?> <i class="fa fa-chevron-down"></i> </a> 
+					<a href="#details" class="btn btn-danger page-scroll hide-on-small" style="margins:auto;width:150px"><?php echo $tab_attribute; ?> <i class="fa fa-chevron-down"></i> </a> 
 				</div>
 			</div>
 		</div>
@@ -196,7 +196,7 @@
 		<div class="container">
 			<div class="row" style="text-align:center;">
 				<div class="col-md-2 col-md-offset-2"  style="text-align:center;">
-					<a href="#map" class="btn btn-danger page-scroll" style="margins:auto;width:150px"> <i class="fa fa-chevron-down"></i> Map </a> 
+					<a href="#map" class="btn btn-danger page-scroll hide-on-small" style="margins:auto;width:150px"> <i class="fa fa-chevron-down"></i> Map </a> 
 				</div>
 			</div>
 		</div>
@@ -378,7 +378,10 @@ $('.button-cart').on('click', function() {
 
 		<script>
 		$(window).scroll(function() {
-			if($(window).scrollTop() < $("#about").offset().top-100 ){
+			if(
+				($(window).scrollTop() < $("#about-product").offset().top-100 ) ||
+				($(window).width()<767)
+			){
 				$(".sidemenu-details").addClass("sidemenu-details-hidden");
 				$(".sidemenu").addClass("sidemenu-hidden");
 			}else{

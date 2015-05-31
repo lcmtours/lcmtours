@@ -123,3 +123,40 @@
 2015-04-30 0:26:59 - PHP Notice:  Undefined index: lat in C:\Users\Ryan\Documents\www\opencart\catalog\controller\product\product.php on line 274
 2015-04-30 0:26:59 - PHP Notice:  Undefined index: lng in C:\Users\Ryan\Documents\www\opencart\catalog\controller\product\product.php on line 275
 2015-04-30 1:03:40 - PHP Notice:  Undefined variable: title in C:\Users\Ryan\Documents\www\opencart\catalog\view\theme\lcmtours\template\product\product.tpl on line 428
+2015-05-31 15:30:25 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:25 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:25 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:25 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:25 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:25 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:30:25 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:25 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:27 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:27 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:27 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:27 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:30:28 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:28 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:29 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:29 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:29 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:29 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:30:30 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:30 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:30 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:30 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:30 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:30 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:30:30 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:30 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:33 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:33 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:33 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:33 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:30:33 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:33 - PHP Notice:  Undefined variable: size in C:\Users\Ryan\Documents\www\lcmtours\catalog\controller\module\featured.php on line 39
+2015-05-31 15:30:34 - PHP Warning:  imagecreatetruecolor() [<a href='function.imagecreatetruecolor'>function.imagecreatetruecolor</a>]: Invalid image dimensions in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 86
+2015-05-31 15:30:34 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 94
+2015-05-31 15:30:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
+2015-05-31 15:30:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
+2015-05-31 15:42:15 - PHP Notice:  Undefined variable: count in C:\Users\Ryan\Documents\www\lcmtours\catalog\view\theme\lcmtours\template\module\featured.tpl on line 15
