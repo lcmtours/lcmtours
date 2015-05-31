@@ -1,9 +1,23 @@
 <?php echo $header; ?>
 <script>
-imagePage=false;
+imagePage=true;
 </script>
 
-
+<!-- Intro Header -->
+<header class="intro" style="background-image:url('<?php echo $intro_images[0]; ?>')">
+	<div class="intro-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h1 class="brand-heading">LCM Tours</h1>
+					<p class="intro-text">Connecting Tourist and Tour Guides in Cameroon.</p>
+					<a href="#about" class="btn btn-primary page-scroll">How It Works</a><br /><br />
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 
 <div class="container">

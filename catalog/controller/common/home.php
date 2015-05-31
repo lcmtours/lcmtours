@@ -6,6 +6,17 @@ class ControllerCommonHome extends Controller {
 		$this->document->setKeywords($this->config->get('config_meta_keyword'));
 
 		
+		$intro_product_ids = array(50,51);
+		$data['intro_images'] = array();
+		foreach( $intro_product_ids as $product_id){
+			$this->load->model('catalog/product');
+			$product_info = $this->model_catalog_product->getProduct($product_id);
+			$this->load->model('tool/image');
+
+			if ($product_info['image']) {
+				$data['intro_images'][] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+			}
+		}
 		
 		if (isset($this->request->get['route'])) {
 			$this->document->addLink(HTTP_SERVER, 'canonical');
@@ -18,11 +29,10 @@ class ControllerCommonHome extends Controller {
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
-
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/home.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/common/home.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('default/template/common/home.tpl', $data));
+			$this->response->setOutput($this->load->view('default/template/common/honme.tpl', $data));
 		}
 	}
 }
