@@ -84,7 +84,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?php echo $home; ?>">Explore</a>
+                        <a class="page-scroll" href="<?php echo $explore; ?>">Explore</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="<?php echo $shopping_cart; ?>"><?php echo $text_cart ?></a>

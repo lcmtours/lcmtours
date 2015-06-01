@@ -11,8 +11,11 @@ imagePage=true;
 				<div class="col-md-8 col-md-offset-2">
 					<h1 class="brand-heading">LCM Tours</h1>
 					<p class="intro-text">Connecting Tourist and Tour Guides in Cameroon.</p>
-					<a href="#about" class="btn btn-primary page-scroll">Explore</a><br /><br />
+					<a href="#about" class="btn btn-danger page-scroll btn-secondary">How it works</a><br /><br />
 					
+					<div style="margin-top:30px;">
+					<?php echo $search; ?>
+					</div>
 				</div>
 			</div>
 		</div>

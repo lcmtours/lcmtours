@@ -32,8 +32,8 @@
 							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
 								Price / Person : <h4 id="estimated-price" style="margin-bottom:5px;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></h4>
 							</div>
-							<div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 hide-xs">
-								<div style="margin-top:top" ><a href="#about-product" class="btn btn-danger page-scroll hide-xs" style="margins:auto;width:150px">Learn more <i class="fa fa-chevron-down"></i> </a> </div>
+							<div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 hidden-xs">
+								<div style="margin-top:top" ><a href="#about-product" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px">Learn more <i class="fa fa-chevron-down"></i> </a> </div>
 							</div>
 						</div>
 						
@@ -54,7 +54,7 @@
 			
 			<?php echo $description; ?>
 
-			<a href="#slideshow" class="btn btn-danger page-scroll hide-xs" style="margins:auto;width:150px">See more <i class="fa fa-chevron-down"></i> </a> </div>
+			<a href="#slideshow" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px">See more <i class="fa fa-chevron-down"></i> </a> </div>
 
             </div>
         </div>
@@ -166,7 +166,7 @@
 		<div class="container" style="margin-top:-100px;">
 			<div class="row" >
 				<div class="col-md-2 col-md-offset-2" style="text-align:center;">
-					<a href="#details" class="btn btn-danger page-scroll hide-xs" style="margins:auto;width:150px"><?php echo $tab_attribute; ?> <i class="fa fa-chevron-down"></i> </a> 
+					<a href="#details" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px"><?php echo $tab_attribute; ?> <i class="fa fa-chevron-down"></i> </a> 
 				</div>
 			</div>
 		</div>
@@ -196,7 +196,7 @@
 		<div class="container">
 			<div class="row" style="text-align:center;">
 				<div class="col-md-2 col-md-offset-2"  style="text-align:center;">
-					<a href="#map" class="btn btn-danger page-scroll hide-xs" style="margins:auto;width:150px"> <i class="fa fa-chevron-down"></i> Map </a> 
+					<a href="#map" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px"> <i class="fa fa-chevron-down"></i> Map </a> 
 				</div>
 			</div>
 		</div>

@@ -160,3 +160,6 @@
 2015-05-31 15:30:34 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 97
 2015-05-31 15:30:34 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in C:\Users\Ryan\Documents\www\lcmtours\system\library\image.php on line 99
 2015-05-31 15:42:15 - PHP Notice:  Undefined variable: count in C:\Users\Ryan\Documents\www\lcmtours\catalog\view\theme\lcmtours\template\module\featured.tpl on line 15
+2015-06-01 18:31:53 - PHP Notice:  Undefined variable: search_box in C:\Users\Ryan\Documents\www\lcmtours\catalog\view\theme\lcmtours\template\product\search.tpl on line 21
+2015-06-01 19:16:20 - PHP Notice:  Use of undefined constant search_preformed - assumed 'search_preformed' in C:\Users\Ryan\Documents\www\lcmtours\catalog\view\theme\lcmtours\template\product\search.tpl on line 102
+2015-06-01 19:16:39 - PHP Notice:  Undefined variable: search_preformed in C:\Users\Ryan\Documents\www\lcmtours\catalog\view\theme\lcmtours\template\product\search.tpl on line 102

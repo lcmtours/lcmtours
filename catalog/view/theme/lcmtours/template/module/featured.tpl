@@ -10,7 +10,7 @@
 	"col-lg-4 col-md-4 col-sm-6 col-xs-12",
 	"col-lg-8 col-md-8 col-sm-12 col-xs-12"
 	);
-	$default_class = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
+	$default_class = "col-lg-4 col-md-4 col-sm-6 col-xs-12";
 
 	for( $i = 0; $i < count($products); $i++) { 
 		$product = $products[$i];

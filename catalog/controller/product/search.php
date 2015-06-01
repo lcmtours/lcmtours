@@ -11,8 +11,10 @@ class ControllerProductSearch extends Controller {
 
 		if (isset($this->request->get['search'])) {
 			$search = $this->request->get['search'];
+			$data['search_preformed'] = true;
 		} else {
 			$search = '';
+			$data['search_preformed'] = false;
 		}
 
 		if (isset($this->request->get['tag'])) {
@@ -196,7 +198,7 @@ class ControllerProductSearch extends Controller {
 
 		$data['products'] = array();
 
-		if (isset($this->request->get['search']) || isset($this->request->get['tag'])) {
+		if (isset($search) || isset($this->request->get['tag'])) {
 			$filter_data = array(
 				'filter_name'         => $search,
 				'filter_tag'          => $tag,
@@ -431,6 +433,7 @@ class ControllerProductSearch extends Controller {
 		}
 
 		$data['search'] = $search;
+		$data['search_box'] = $this->load->controller('common/search');
 		$data['description'] = $description;
 		$data['category_id'] = $category_id;
 		$data['sub_category'] = $sub_category;
