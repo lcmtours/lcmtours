@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']            = 'Your Itinerary';
+$_['heading_title']            = 'Your Inquiry';
 
 // Text
 $_['text_success']             = 'Success: You have added <a href="%s">%s</a> to <a href="%s">your tour package</a>!';
@@ -25,7 +25,7 @@ $_['text_payment_recurring']   = 'Payment Profile';
 $_['text_trial_description']   = '%s every %d %s(s) for %d payment(s) then';
 $_['text_payment_description'] = '%s every %d %s(s) for %d payment(s)';
 $_['text_payment_cancel']      = '%s every %d %s(s) until canceled';
-$_['text_comments']            = 'Add Comments About Your Order';
+$_['text_comments']            = 'Add Comments to Your Inquiry';
 
 // Column
 $_['column_image']             = 'Image';
