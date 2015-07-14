@@ -36,8 +36,8 @@ class ControllerModuleFeatured extends Controller {
 			$product_info = $this->model_catalog_product->getProduct($product_id);
 
 			if ($product_info) {
-				if ($product_info['image']) {
 					$width_multiplier = $i<count($sizes) ? $sizes[$i][0]:1;
+				if ($product_info['image']) {
 					$width = $setting['width']*$width_multiplier + 30*($width_multiplier-1);
 					$height_multiplier = $i<count($sizes)?$sizes[$i][1]:1;
 					$image = $this->model_tool_image->resize($product_info['image'], $width, $setting['height']*$height_multiplier);

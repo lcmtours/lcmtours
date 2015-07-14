@@ -5,6 +5,9 @@ class ControllerCheckoutCart extends Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
+		
+		$this->session->data['payment_method']['code'] = 'cod';
+		
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
@@ -35,7 +38,17 @@ class ControllerCheckoutCart extends Controller {
 			$data['button_remove'] = $this->language->get('button_remove');
 			$data['button_shopping'] = $this->language->get('button_shopping');
 			$data['button_checkout'] = $this->language->get('button_checkout');
+			
+			$data['entry_firstname'] = $this->language->get('entry_firstname');
+			$data['entry_lastname'] = $this->language->get('entry_lastname');
+			$data['entry_email'] = $this->language->get('entry_email');
+			$data['entry_telephone'] = $this->language->get('entry_telephone');
+			$data['text_comments'] = $this->language->get('text_comments');
+			$data['button_confirm'] = $this->language->get('button_confirm');
+			$data['continue'] = $this->url->link('checkout/success');
+			$data['explore_url'] = $this->url->link('product/search');
 
+			
 			if (!$this->cart->hasStock() && (!$this->config->get('config_stock_checkout') || $this->config->get('config_stock_warning'))) {
 				$data['error_warning'] = $this->language->get('error_stock');
 			} elseif (isset($this->session->data['error'])) {
@@ -189,34 +202,10 @@ class ControllerCheckoutCart extends Controller {
 			$total = 0;
 			$taxes = $this->cart->getTaxes();
 
-			// Display prices
-			if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
-				$sort_order = array();
+			$this->load->model('total/sub_total');
+			$this->model_total_sub_total->getTotal($total_data, $total, $taxes);
+		
 
-				$results = $this->model_extension_extension->getExtensions('total');
-
-				foreach ($results as $key => $value) {
-					$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
-				}
-
-				array_multisort($sort_order, SORT_ASC, $results);
-
-				foreach ($results as $result) {
-					if ($this->config->get($result['code'] . '_status')) {
-						$this->load->model('total/' . $result['code']);
-
-						$this->{'model_total_' . $result['code']}->getTotal($total_data, $total, $taxes);
-					}
-				}
-
-				$sort_order = array();
-
-				foreach ($total_data as $key => $value) {
-					$sort_order[$key] = $value['sort_order'];
-				}
-
-				array_multisort($sort_order, SORT_ASC, $total_data);
-			}
 
 			$data['totals'] = array();
 
@@ -226,8 +215,38 @@ class ControllerCheckoutCart extends Controller {
 					'text'  => $this->currency->format($total['value'])
 				);
 			}
+			$data['total'] = $this->currency->format($total_data[0]['value']);
 
-			$data['continue'] = $this->url->link('common/home');
+			if (isset($this->session->data['guest']['firstname'])) {
+			$data['firstname'] = $this->session->data['guest']['firstname'];
+		} else {
+			$data['firstname'] = '';
+		}
+
+		if (isset($this->session->data['guest']['lastname'])) {
+			$data['lastname'] = $this->session->data['guest']['lastname'];
+		} else {
+			$data['lastname'] = '';
+		}
+
+		if (isset($this->session->data['guest']['email'])) {
+			$data['email'] = $this->session->data['guest']['email'];
+		} else {
+			$data['email'] = '';
+		}
+
+		if (isset($this->session->data['guest']['telephone'])) {
+			$data['telephone'] = $this->session->data['guest']['telephone'];
+		} else {
+			$data['telephone'] = '';
+		}
+		
+		if (isset($this->session->data['comment'])) {
+			$data['comment'] = $this->session->data['comment'];
+		} else {
+			$data['comment'] = '';
+		}
+			
 
 			$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 
@@ -258,7 +277,7 @@ class ControllerCheckoutCart extends Controller {
 
 			$data['button_continue'] = $this->language->get('button_continue');
 
-			$data['continue'] = $this->url->link('common/home');
+			$data['explore_url'] = $this->url->link('product/search');
 
 			unset($this->session->data['success']);
 
