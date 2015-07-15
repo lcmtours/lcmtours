@@ -15,6 +15,8 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
 
+	<?php 
+	/*
       <div class="row">
         <div class="col-xs-offset-3 col-xs-6">
           <?php echo $search_box; ?>
@@ -48,7 +50,8 @@
 
       </div>
       
-      
+      */ 
+	  ?>
     
       <?php if ($products) { ?>
 
