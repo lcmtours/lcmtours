@@ -33,24 +33,17 @@ imagePage=true;
 			<?php $class = 'col-sm-12'; ?>
 		<?php } ?>
 		
-		<div id="content" class="<?php echo $class; ?>">
-
-			<section id="about" class="container content-section" >
-			<div class="row">
-			<?php echo $content_top; ?>
-			</div>
-			</section>
-
-			<!-- How it works Section -->
-			<section id="howitworks" class="content-section ">
-			<div class="howitworks-section">
-			<div class="container">
-			<?php echo $content_bottom; ?></div>
-			</div>
-			</div>
-			</section>
-		</div>
 		<?php echo $column_right; ?>
 	</div>
 </div>
+
+
+<section id="about" class="container content-section" >
+	<div class="row">
+		<?php echo $content_top; ?>
+	</div>
+</section>
+
+<?php echo $content_bottom; ?>
+
 <?php echo $footer; ?>

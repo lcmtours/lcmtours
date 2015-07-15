@@ -1,3 +1,9 @@
+<!-- How it works Section -->
+<section id="howitworks" class="content-section ">
+<div class="howitworks-section">
+<div class="container">
+
+
 <h1 style="text-align:center;"><?php echo $heading_title; ?></h1>
 <h4 style="text-align:center;"><?php echo $heading_subtitle; ?></h4>
 <div class="feature-container" >
@@ -41,3 +47,9 @@
 	<?php } 
 	?>
 </div>
+
+
+</div>
+</div>
+</div>
+</section>
