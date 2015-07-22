@@ -7,6 +7,7 @@ class ControllerCommonFooter extends Controller {
 		$data['text_service'] = $this->language->get('text_service');
 		$data['text_extra'] = $this->language->get('text_extra');
 		$data['text_contact'] = $this->language->get('text_contact');
+		$data['text_blog'] = 'Blog';
 		$data['text_return'] = $this->language->get('text_return');
 		$data['text_sitemap'] = $this->language->get('text_sitemap');
 		$data['text_manufacturer'] = $this->language->get('text_manufacturer');
@@ -32,6 +33,7 @@ class ControllerCommonFooter extends Controller {
 		}
 
 		$data['contact'] = $this->url->link('information/contact');
+		$data['blog'] = 'http://lcmtours.wordpress.com';
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');
 		$data['sitemap'] = $this->url->link('information/sitemap');
 		$data['manufacturer'] = $this->url->link('product/manufacturer');
