@@ -20,7 +20,7 @@ class ControllerCheckoutCart extends Controller {
 			'text' => $this->language->get('heading_title')
 		);
 
-		if ($this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
+		if (1==1 || $this->cart->hasProducts() || !empty($this->session->data['vouchers'])) {
 			$data['heading_title'] = $this->language->get('heading_title');
 
 			$data['text_recurring_item'] = $this->language->get('text_recurring_item');

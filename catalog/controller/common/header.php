@@ -63,7 +63,7 @@ class ControllerCommonHeader extends Controller {
 		$data['logout'] = $this->url->link('account/logout', '', 'SSL');
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
-		$data['contact'] = $this->url->link('information/contact');
+		$data['contact'] = $this->url->link('checkout/cart');
 		$data['telephone'] = $this->config->get('config_telephone');
 		$data['text_contact'] = $this->language->get('text_contact');
 		$data['text_cart'] = $this->language->get('text_cart');

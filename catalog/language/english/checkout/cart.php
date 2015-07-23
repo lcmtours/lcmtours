@@ -25,7 +25,7 @@ $_['text_payment_recurring']   = 'Payment Profile';
 $_['text_trial_description']   = '%s every %d %s(s) for %d payment(s) then';
 $_['text_payment_description'] = '%s every %d %s(s) for %d payment(s)';
 $_['text_payment_cancel']      = '%s every %d %s(s) until canceled';
-$_['text_comments']            = 'Add Comments to Your Inquiry';
+$_['text_comments']            = 'Comments';
 
 // Column
 $_['column_image']             = 'Image';
@@ -46,7 +46,7 @@ $_['error_recurring_required'] = 'Please select a payment recurring!';
 // Entry
 $_['entry_email_address']            = 'E-Mail Address';
 $_['entry_email']                    = 'E-Mail';
-$_['entry_firstname']                = 'First Name';
+$_['entry_firstname']                = 'Your Name';
 $_['entry_lastname']                 = 'Last Name';
 $_['entry_telephone']                = 'Telephone';
 
