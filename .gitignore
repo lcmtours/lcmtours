@@ -5,3 +5,4 @@ config-server.php
 image/catalog/tour_images/Thumbs.db
 *.log
 *.log
+*.db
