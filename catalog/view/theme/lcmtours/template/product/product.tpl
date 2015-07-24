@@ -7,8 +7,8 @@
 		<div>
 			<div id="product">
 				
-			Duration: <h4><?php echo $duration; ?></h4>
-			Estimated price <h4 id="estimated-price" style="margin-bottom:5px;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></h4>
+			Duration: <br /><span style="font-size:large;font-weight:bold;"><?php echo $duration; ?></span><br />
+			Estimated price <br /><span id="estimated-price" style="margin-bottom:5px;font-size:large;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></span> <br />
 			for <input id="quantity" type="number" name="quantity" value="1" size="2" id="input-quantity" class="form-control" style="width:75px;display:inline" /> people
 			<input id="product_id" type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
 				</div>
@@ -27,10 +27,10 @@
                         <p class="intro-text"><?php echo $meta_title; ?></p>
                         <div class="row" style="text-align:center" >
 							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-								Duration: <h4 style=" margin-bottom:5px;"><?php echo $duration; ?></h4>
+								Duration: <br /> <span id="estimated-price" style="margin-bottom:5px;font-size:large;font-weight:bold;" ><?php echo $duration; ?></span>
 							</div>
 							<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
-								Price / Person : <h4 id="estimated-price" style="margin-bottom:5px;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></h4>
+								Price / Person : <br /> <span id="estimated-price" style="margin-bottom:5px;font-size:large;font-weight:bold;" ><?php if ($discounts) { echo $discounts[0]['price'];} else { echo $price;  } ?></span>
 							</div>
 							<div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 hidden-xs">
 								<div style="margin-top:top" ><a href="#about-product" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px">Learn more <i class="fa fa-chevron-down"></i> </a> </div>
@@ -50,7 +50,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 			
-			<h3><?php echo $tab_description; ?> </h3>
+			<h2><?php echo $tab_description; ?> </h2>
 			
 			<?php echo $description; ?>
 
@@ -63,6 +63,7 @@
 	
 	<!-- Slide show -->
     <section id="slideshow" class="content-section ">
+	<h2 style="display:none">Photos</h2>
         <div class="slideshow-section">
             <div class="container">
                    <!-- Jssor Slider Begin -->
@@ -173,7 +174,7 @@
     </section>
 	
 	<section id="details" class="container content-section ">
-		<h3><?php echo $tab_attribute; ?></h3>
+		<h2><?php echo $tab_attribute; ?></h2>
 		<div class="tab-pane" id="tab-specification">
 			<table class="table table-bordered">
 				<?php foreach ($attribute_groups as $attribute_group) { ?>
