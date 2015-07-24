@@ -82,12 +82,12 @@
 					<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
 						height: 600px; overflow: hidden;">
 						<div>
-							<img u="image" src="<?php echo $popup; ?>" />
+							<img u="image" src="<?php echo $popup; ?>" alt="<?php echo $heading_title; ?>" />
 						</div>
 						<?php if ($images) { ?>
 						<?php foreach ($images as $image) { ?>
 						<div>
-							<img u="image" src="<?php echo $image['popup']; ?>" />
+							<img u="image" src="<?php echo $image['popup']; ?>"  alt="" />
 						</div>
 			
 						<?php } ?>
