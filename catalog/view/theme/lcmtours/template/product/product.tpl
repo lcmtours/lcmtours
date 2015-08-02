@@ -47,11 +47,20 @@
 
     <!-- About Section -->
     <section id="about-product" class="container content-section" style="" >
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+        <div class="row">   
+		
+			<div class="col-lg-1 ">
+			
+				<div class="fb-share-button" data-href="<?php echo $url; ?>" data-layout="button"></div>
+				<br />
+				<br />
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $url; ?>" data-via="lcmtours">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+			
+            <div class="col-lg-8 col-lg-offset-1">
 			
 			<h2><?php echo $tab_description; ?> </h2>
-			
 			<?php echo $description; ?>
 
 			<a href="#slideshow" class="btn btn-danger page-scroll hidden-xs" style="margins:auto;width:150px">See more <i class="fa fa-chevron-down"></i> </a> </div>

@@ -480,7 +480,16 @@ class ControllerProductProduct extends Controller {
 			$this->document->addHeaderLines("<meta name=\"twitter:description\" content=\"" . $product_info['meta_title'] ."\">");
 			$this->document->addHeaderLines("<meta name=\"twitter:image\" content=\"" . $data['popup'] . "\">");
 			
+			// Facebook OpenGraph Place
+			 $this->document->addHeaderLines(  "<meta property=\"fb:app_id\"                content=\"771201392989195\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:type\"                  content=\"place\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:url\"                   content=\"". $this->url->link('product/product', 'product_id=' . $this->request->get['product_id']) . "\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:title\"                 content=\"". $product_info['name'] ."\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:image\"                 content=\"". $data['popup'] ."\" />");
+			 $this->document->addHeaderLines(  "<meta property=\"place:location:latitude\"  content=\"". $product_info['lat'] ."\" />");
+			 $this->document->addHeaderLines(  "<meta property=\"place:location:longitude\" content=\"". $product_info['lng'] ."\" />");
 			
+			$data['url'] = $this->url->link('product/product', 'product_id=' . $this->request->get['product_id']);
 			
 			$data['text_payment_recurring'] = $this->language->get('text_payment_recurring');
 			$data['recurrings'] = $this->model_catalog_product->getProfiles($this->request->get['product_id']);
