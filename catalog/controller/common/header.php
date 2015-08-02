@@ -15,6 +15,7 @@ class ControllerCommonHeader extends Controller {
 		$data['links'] = $this->document->getLinks();
 		$data['styles'] = $this->document->getStyles();
 		$data['scripts'] = $this->document->getScripts();
+		$data['headerLines'] = $this->document->getHeaderLines();
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
 		$data['google_analytics'] = html_entity_decode($this->config->get('config_google_analytics'), ENT_QUOTES, 'UTF-8');

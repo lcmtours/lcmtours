@@ -271,6 +271,7 @@ class ControllerProductProduct extends Controller {
 			$data['model'] = $product_info['model'];
 			$data['reward'] = $product_info['reward'];
 			$data['points'] = $product_info['points'];
+			$data['location'] = $product_info['location'];
 			$data['lat'] = $product_info['lat'];
 			$data['lng'] = $product_info['lng'];
 			$data['shopping_cart'] = $this->url->link('checkout/cart');
@@ -470,6 +471,17 @@ class ControllerProductProduct extends Controller {
 				}
 			}
 
+			
+			// Twitter Card
+			$this->document->addHeaderLines("<meta name=\"twitter:card\" content=\"". $product_info['name'] ."\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:site\" content=\"@lcmTours\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:creator\" content=\"@lcmTours\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:title\" content=\"". $product_info['name'] ."\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:description\" content=\"" . $product_info['meta_title'] ."\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:image\" content=\"" . $data['popup'] . "\">");
+			
+			
+			
 			$data['text_payment_recurring'] = $this->language->get('text_payment_recurring');
 			$data['recurrings'] = $this->model_catalog_product->getProfiles($this->request->get['product_id']);
 
@@ -543,6 +555,8 @@ class ControllerProductProduct extends Controller {
 				'href' => $this->url->link('product/product', $url . '&product_id=' . $product_id)
 			);
 
+			
+			
 			$this->document->setTitle($this->language->get('text_error'));
 
 			$data['heading_title'] = $this->language->get('text_error');

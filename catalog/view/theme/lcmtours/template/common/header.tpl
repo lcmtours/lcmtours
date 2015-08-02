@@ -53,6 +53,14 @@
 	<?php foreach ($scripts as $script) { ?>
 	<script src="<?php echo $script; ?>" type="text/javascript"></script>
 	<?php } ?>
+	
+	
+	<?php foreach ($headerLines as $line) { ?>
+	<?php echo $line; ?>
+	
+	<?php } ?>
+	
+	
 	<?php echo $google_analytics; ?>
 	<script>imagePage=false</script>
 </head>
