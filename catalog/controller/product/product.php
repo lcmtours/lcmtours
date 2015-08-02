@@ -485,6 +485,8 @@ class ControllerProductProduct extends Controller {
 			 $this->document->addHeaderLines(  "<meta property=\"og:type\"                  content=\"place\" /> ");
 			 $this->document->addHeaderLines(  "<meta property=\"og:url\"                   content=\"". $this->url->link('product/product', 'product_id=' . $this->request->get['product_id']) . "\" /> ");
 			 $this->document->addHeaderLines(  "<meta property=\"og:title\"                 content=\"". $product_info['name'] ."\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:description\"                 content=\"". $product_info['meta_title'] ."\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"og:site_name\"                 content=\"www.lcmtours.com\" />");
 			 $this->document->addHeaderLines(  "<meta property=\"og:image\"                 content=\"". $data['popup'] ."\" />");
 			 $this->document->addHeaderLines(  "<meta property=\"place:location:latitude\"  content=\"". $product_info['lat'] ."\" />");
 			 $this->document->addHeaderLines(  "<meta property=\"place:location:longitude\" content=\"". $product_info['lng'] ."\" />");
