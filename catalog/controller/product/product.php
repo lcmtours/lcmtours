@@ -473,7 +473,7 @@ class ControllerProductProduct extends Controller {
 
 			
 			// Twitter Card
-			$this->document->addHeaderLines("<meta name=\"twitter:card\" content=\"". $product_info['name'] ."\">");
+			$this->document->addHeaderLines("<meta name=\"twitter:card\" content=\"summary_large_image\">");
 			$this->document->addHeaderLines("<meta name=\"twitter:site\" content=\"@lcmTours\">");
 			$this->document->addHeaderLines("<meta name=\"twitter:creator\" content=\"@lcmTours\">");
 			$this->document->addHeaderLines("<meta name=\"twitter:title\" content=\"". $product_info['name'] ."\">");
