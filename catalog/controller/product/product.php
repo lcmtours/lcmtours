@@ -482,6 +482,7 @@ class ControllerProductProduct extends Controller {
 			
 			// Facebook OpenGraph Place
 			 $this->document->addHeaderLines(  "<meta property=\"fb:app_id\"                content=\"771201392989195\" /> ");
+			 $this->document->addHeaderLines(  "<meta property=\"fb:admins\" content=\"19720029\" />");
 			 $this->document->addHeaderLines(  "<meta property=\"og:type\"                  content=\"place\" /> ");
 			 $this->document->addHeaderLines(  "<meta property=\"og:url\"                   content=\"". $this->url->link('product/product', 'product_id=' . $this->request->get['product_id']) . "\" /> ");
 			 $this->document->addHeaderLines(  "<meta property=\"og:title\"                 content=\"". $product_info['name'] ."\" /> ");

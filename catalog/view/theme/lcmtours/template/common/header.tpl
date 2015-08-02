@@ -18,8 +18,7 @@
 	<meta name="keywords" content= "<?php echo $keywords; ?>" />
 	<?php } ?>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="fb:admins" content="19720029" />
-	<meta property="fb:page_id" content="597117033686574">
+	
 	<?php if ($icon) { ?>
 	<link href="<?php echo $icon; ?>" rel="icon" />
 	<?php } ?>
