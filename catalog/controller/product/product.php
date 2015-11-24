@@ -324,7 +324,7 @@ class ControllerProductProduct extends Controller {
 			
 			$data['currency']=$this->currency->format("");
 			
-			$data['duration'] = $this->weight->format( $product_info['weight'] , $this->config->get('config_weight_class_id'), $this->language->get('decimal_point'), $this->language->get('thousand_point'));;
+			$data['duration'] = $this->weight->format( $product_info['weight'] , $product_info['weight_class_id'], $this->language->get('decimal_point'), $this->language->get('thousand_point'));
 			
 			if ((float)$product_info['special']) {
 				$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')));
