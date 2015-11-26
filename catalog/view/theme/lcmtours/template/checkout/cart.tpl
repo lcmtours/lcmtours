@@ -37,19 +37,30 @@
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="border-right:solid #AAA 1px;">
 						  
 
-	  
+						<?php
+						/*
 						<div class="form-group required">
 							<label class="control-label" for="input-payment-firstname"><?php echo $entry_firstname; ?></label>
 							<input type="text" name="firstname" value="<?php echo $firstname; ?>" placeholder="<?php echo $entry_firstname; ?>" id="input-payment-firstname" class="form-control" />
 						</div>
+						*/
+						?>
+						<input type="hidden" name="firstname" value="-not given-" id="input-payment-firstname"  />
+						
 						<div class="form-group required">
 							<label class="control-label" for="input-payment-email"><?php echo $entry_email; ?></label>
 							<input type="text" name="email" value="<?php echo $email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-payment-email" class="form-control" />
 						</div>
+						<?php
+						/*
 						<div class="form-group required">
 							<label class="control-label" for="input-payment-telephone"><?php echo $entry_telephone; ?></label>
 							<input type="text" name="telephone" value="<?php echo $telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-payment-telephone" class="form-control" />
 						</div>
+						*/
+						?>
+						<input type="hidden" name="telephone" value="-not given-" id="input-payment-telephone" />
+						
 						<p><strong><?php echo $text_comments; ?></strong><br />
 							<textarea name="comment" rows="5" class="form-control"><?php echo $comment; ?></textarea>
 						</p>	
