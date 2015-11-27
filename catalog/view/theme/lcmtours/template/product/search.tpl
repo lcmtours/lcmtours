@@ -144,4 +144,11 @@ $('select[name=\'category_id\']').on('change', function() {
 
 $('select[name=\'category_id\']').trigger('change');
 --></script> 
+
+<script>
+// Search
+// Track searches on your website (ex. product searches)
+fbq('track', 'Search');
+</script>
+
 <?php echo $footer; ?> 

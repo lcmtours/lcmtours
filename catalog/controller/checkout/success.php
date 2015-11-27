@@ -37,6 +37,7 @@ class ControllerCheckoutSuccess extends Controller {
 			unset($this->session->data['reward']);
 			unset($this->session->data['voucher']);
 			unset($this->session->data['vouchers']);
+			$data['total'] = $this->session->data['totals'][0]['value'];
 			unset($this->session->data['totals']);
 		}
 

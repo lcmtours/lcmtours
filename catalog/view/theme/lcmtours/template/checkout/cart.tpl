@@ -206,3 +206,9 @@ updateQuantities();
 $( "#update-button" ).on( 'click', updateQuantities);
 
 </script>
+
+<script>
+// AddToCart
+// Track when items are added to a shopping cart (ex. click/landing page on Add to Cart button)
+fbq('track', 'AddToCart');
+</script>

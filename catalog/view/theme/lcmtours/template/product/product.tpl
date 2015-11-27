@@ -433,7 +433,11 @@ $('.button-cart').on('click', function() {
     });
 		</script>
 		
-		
+		<script>
+			// ViewContent
+			// Track key page views (ex: product page, landing page or article)
+			fbq('track', 'ViewContent');
+		</script>
 		
 </body></html>
 

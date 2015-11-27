@@ -22,4 +22,9 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+<script>
+// Purchase
+// Track purchases or checkout flow completions (ex. landing on "Thank You" or confirmation page)
+fbq('track', 'Purchase', {value: '<?php echo $total; ?>', currency: 'USD'});
+</script>
 <?php echo $footer; ?>
