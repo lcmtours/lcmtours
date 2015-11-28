@@ -6,3 +6,4 @@ image/catalog/tour_images/Thumbs.db
 *.log
 *.log
 *.db
+.htaccess
