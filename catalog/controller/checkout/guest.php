@@ -229,9 +229,9 @@ class ControllerCheckoutGuest extends Controller {
 
 			$this->session->data['guest']['customer_group_id'] = $customer_group_id;
 			$this->session->data['guest']['firstname'] = $this->request->post['firstname'];
-			$this->session->data['guest']['email'] = $this->request->post['email'];
+			$this->session->data['guest']['email'] = isset($this->request->post['email'])?$this->request->post['email']:'no-email@email.com';
 			$this->session->data['guest']['telephone'] = $this->request->post['telephone'];
-			$this->session->data['comment'] = $this->request->post['comment'];
+			$this->session->data['comment'] = isset($this->request->post['comment'])?$this->request->post['comment']:'-no comment-';
 			
 			
 			if (isset($this->request->post['custom_field']['account'])) {
