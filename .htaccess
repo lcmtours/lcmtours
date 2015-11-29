@@ -24,8 +24,7 @@ Options -Indexes
 RewriteEngine On
 
 
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
 # If your opencart installation does not run on the main web folder make sure you folder it does run in ie. / becomes /shop/ 
 
 RewriteBase /
