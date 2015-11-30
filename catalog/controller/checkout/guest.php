@@ -194,11 +194,11 @@ class ControllerCheckoutGuest extends Controller {
 				$json['error']['firstname'] = $this->language->get('error_firstname');
 			}
 
-
+/*
 			if ((utf8_strlen($this->request->post['email']) > 96) || !preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $this->request->post['email'])) {
 				$json['error']['email'] = $this->language->get('error_email');
 			}
-
+*/
 			if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
 				$json['error']['telephone'] = $this->language->get('error_telephone');
 			}
@@ -229,9 +229,9 @@ class ControllerCheckoutGuest extends Controller {
 
 			$this->session->data['guest']['customer_group_id'] = $customer_group_id;
 			$this->session->data['guest']['firstname'] = $this->request->post['firstname'];
-			$this->session->data['guest']['email'] = $this->request->post['email'];
+			$this->session->data['guest']['email'] = isset($this->request->post['email'])?$this->request->post['email']:'no-email@email.com';
 			$this->session->data['guest']['telephone'] = $this->request->post['telephone'];
-			$this->session->data['comment'] = $this->request->post['comment'];
+			$this->session->data['comment'] = isset($this->request->post['comment'])?$this->request->post['comment']:'-no comment-';
 			
 			
 			if (isset($this->request->post['custom_field']['account'])) {
