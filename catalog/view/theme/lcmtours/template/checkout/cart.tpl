@@ -49,7 +49,7 @@
 						
 						<div class="form-group required">
 							<label class="control-label" for="input-payment-email"><?php echo $entry_email; ?></label>
-							<input type="text" name="email" value="<?php echo $email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-payment-email" class="form-control" />
+							<input type="text" name="email" value="<?php echo $email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-payment-email" class="form-control" required />
 						</div>
 						<?php
 						/*
